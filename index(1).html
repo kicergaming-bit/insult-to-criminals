@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>My Gallery</h1>
+    <button id="loginBtn">Owner Login</button>
+    <button id="logoutBtn" class="hidden">Logout</button>
+</header>
+
+
+<!-- OWNER PANEL -->
+
+<section id="ownerPanel" class="owner-panel hidden">
+
+    <h2>Owner Panel</h2>
+
+    <input
+        type="file"
+        id="photoInput"
+        accept="image/*"
+    >
+
+    <button id="uploadBtn">
+        Upload Foto
+    </button>
+
+    <p id="uploadStatus"></p>
+
+</section>
+
+
+<!-- LOGIN -->
+
+<section id="loginPanel" class="login-panel hidden">
+
+    <h2>Owner Login</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <button id="loginSubmit">
+        Login
+    </button>
+
+    <p id="loginStatus"></p>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<main id="gallery"></main>
+
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
